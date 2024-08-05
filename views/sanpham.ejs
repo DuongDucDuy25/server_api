@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+</head>
+<body>
+    <h1>Danh Sách Tài Khoản</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>name</th>
+                <th>Price</th>
+                <th>Mô Tả</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% sanpham.forEach(function(sanphams) { %>
+               <tr>
+                   <td><%= sanphams._id %></td>
+                   <td><%= sanphams.name%></td>
+                   <td><%= sanphams.price %></td>
+                   <td><%= sanphams.mota %></td>
+               </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
